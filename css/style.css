@@ -1,0 +1,165 @@
+.nav-sync{
+    margin:auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 10px;
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.img_product{
+    height: 300px;
+    object-fit: contain;
+}
+
+.img_product_cart{
+    width: 120px;
+    height: 130px;
+    object-fit: contain;
+}
+
+.w-400{
+    width: 400px
+}
+
+#icon{
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+.sale{
+    color: red;
+}
+.price_after{
+    text-decoration: line-through;
+}
+
+#content_filter{
+    padding-bottom: 10px;
+}
+
+.filter{
+    width: 350px;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.select-class{
+    width:150px;
+    height: 30px;
+    margin: 10px;
+}
+
+#content_pagination{
+    margin-top: 50px;
+}
+
+.btn-search{
+    width: 180px;
+}
+
+#quantity-cart{
+    font-size: 18px;
+    margin-left: 5px;
+}
+#content_cart{
+    overflow: scroll;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+#footer-cart{
+    width: 100%;
+    height: 60px;
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 21px;
+}
+.offcanvas-body{
+    overflow-y: hidden;
+}
+
+.icon-pointer{
+    cursor: pointer;
+}
+.icon-pointer:hover{
+    color: green;
+}
+
+.number-quantity{
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.name-cart{
+    font-size: 14px;
+}
+
+#cart-shopping{
+    position: fixed;
+    height: 100%;
+    z-index: 1040;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    top: 0;
+    right: 0;
+    visibility: visible;
+    transform: translateX(100%);
+    transition: transform .3s ease-in-out;
+    padding-right: 8px;
+}
+
+#black-cart{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1035;
+    background-color: rgba(0,0,0,.5);
+    visibility: visible;
+    transform: translateX(100%);
+}
+
+.hide{
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.show{
+    transform:none !important
+}
+.text-delete{
+    cursor: pointer;
+    font-size: .875em;
+}
+.text-delete:hover{
+   color: red;
+}
+
+.text-clean{
+    margin-top: 2px;
+    margin-left: 50px;
+    cursor: pointer;
+    font-size: .875em;
+}
+.text-clean:hover{
+    color: red;
+}
+
+.btn-outline-primary{
+    margin-top: 10px;
+}
+
+.page-link{
+    cursor: pointer;
+}
+
+.page-link{
+    cursor: pointer;
+}
