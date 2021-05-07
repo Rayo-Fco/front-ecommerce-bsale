@@ -1,6 +1,6 @@
 # front-ecommerce-bsale
 
-El frontend esta realizado por HTML, CSS y JAVASCRIPT, en donde se ocupo boostrap para el diseño.
+El frontend esta realizado por HTML, CSS y JAVASCRIPT, en donde se ocupo boostrap para el diseño. El cual realiza llamadas hacia el backend y modifica el DOM
 
 El sistema se compone de siguiente estructura:
 
