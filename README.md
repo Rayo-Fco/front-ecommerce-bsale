@@ -25,9 +25,11 @@ El sistema se compone de siguiente estructura:
 |   index.html      | Archivo principal realizado en html5 con bootstrap  |
 
 
+#JavaScript
+
 ***Cart***
 
-Funciones de la clase Cart
+
 
 |      Funcion      |       Valores Recibidos  |  Valor Retornado  |  Descripcion |      
 | ----------------- | ------------------------ | ------------------|--------------|
