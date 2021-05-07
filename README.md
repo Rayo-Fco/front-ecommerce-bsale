@@ -4,11 +4,17 @@ El frontend esta realizado por HTML, CSS y JAVASCRIPT, en donde se ocupo boostra
 
 El sistema se compone de siguiente estructura:
 
-| css -- styles.css
-| img -- no-disponible.png
-| js --- Cart.js
-|    --- main.js 
-| index.html
+├── css
+│   └── styles.css
+├── js
+│   ├── Cart.js
+│   └── main.js 
+├── img
+│   └── no-disponible.png
+├── index.html
+└── README.md
+
+
 
 |      Archivo      |       Descripcion        | 
 | ----------------- | ------------------------ | 
