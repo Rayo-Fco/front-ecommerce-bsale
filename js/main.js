@@ -15,7 +15,6 @@ const categoria = params.get('categoria')
 document.getElementById('search').value = ""
 //obtener el los productos
 const getProduct = () => {
-    console.log("entroooo")
     //gestionar la respuesta al backend
     fetch(`https://api.zarapito.xyz`)
         .then(res => res.json())
@@ -32,7 +31,7 @@ const getProduct = () => {
             loadProducts(data)
         })
         .catch(err => {
-            alert("Problema en la conexion con la base de datos", err)
+            alert("Tenemos problemas disculpa", err)
             console.log(err)
         })
 }
@@ -57,7 +56,7 @@ const getSearch = (search)=>{
 
      })
      .catch(err => {
-         alert("Problema en la conexion con la base de datos", err)
+         alert("Tenemos problemas disculpa", err)
          console.log(err)
      })
 }
@@ -82,7 +81,7 @@ const setOrderBy = (order_by)=>{
 
     })
     .catch(err => {
-        alert("Problema en la conexion con la base de datos", err)
+        alert("Tenemos problemas disculpa", err)
         console.log(err)
     })
     
@@ -117,7 +116,7 @@ const setOrderDirection = ()=>{
 
     })
     .catch(err => {
-        alert("Problema en la conexion con la base de datos", err)
+        alert("Tenemos problemas disculpa", err)
         console.log(err)
     })
 
@@ -218,7 +217,7 @@ const setPage = (page)=>{
 
     })
     .catch(err => {
-        alert("Problema en la conexion con la base de datos", err)
+        alert("Tenemos problemas disculpa", err)
         console.log(err)
     })
     
@@ -272,7 +271,6 @@ const loadMenu = (data) => {
     const content_menu = document.querySelector('#content_menu')
     let menu = ''
     data.map(({ name }) => {
-        console.log(name);
         menu = menu + `<li><a class="dropdown-item" onclick="handleCategory('${name}')" >${name}</a></li>`
     })
 
@@ -305,7 +303,7 @@ const handleCategory = (name)=>{
 
     })
     .catch(err => {
-        alert("Problema en la conexion con la base de datos", err)
+        alert("Tenemos problemas disculpa", err)
         console.log(err)
     })
 }

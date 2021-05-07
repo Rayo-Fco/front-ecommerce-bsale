@@ -25,7 +25,7 @@ El sistema se compone de siguiente estructura:
 |   index.html      | Archivo principal realizado en html5 con bootstrap  |
 
 
-#Cart
+***Cart***
 
 Funciones de la clase Cart
 
@@ -41,6 +41,22 @@ Funciones de la clase Cart
 |loadInitCart()| ninguno| ninguno| Se carga el carro de compras con el metodo getLocalStorage() para pasarlo en una variable y luego designarlo en el loadCart()
 
 
-#Main
+***Main***
 
-
+|      Funcion      |       Valores Recibidos  |  Valor Retornado  |  Descripcion |      
+| ----------------- | ------------------------ | ------------------|--------------|
+|getProduct()|ninguno|ninguno|Se realiza una pedicion hacia el backend con los productos para la pagina principal, luego de carga los metodos loadPagination() y loadProducts(). En caso de que la peticion genere un error se mostrara en un alerta .|
+|getSearch() | Search| ninguno | Se obtiene el valor string del search y se genera una pedicion hacia el backend con los productos para la busqueda, luego de carga los metodos loadPagination() y loadProducts(). En caso de que la peticion genere un error se mostrara en un alerta .|
+|setOrderBy| order_by | ninguno | Se obtiene el valor del orden y se valida si se ha realizado una busqueda para obtener el orden de esa busqueda de lo contrario se omite la busqueda y luego realiza una pedicion hacia el backend con los productos , luego de carga los metodos loadPagination() y loadProducts(). En caso de que la peticion genere un error se mostrara en un alerta. |
+|setOrderDirection|ninguno|ninguno|Se obtiene el valor del orden, busqueda de obtener un null se omiten, luego se obtiene el valor de la direccion del orden, para asi realizar el anverso en la peticion al backend, en donde se valida si existen las categorias para ordenar dependiente solo de las categorias asociadas de lo contrario basarse en todos los productos|
+|loadProducts ()|products |ninguno|Se recibe el objeto de todos los productos y se genera un map() para mostrar los productos en pantalla|
+|loadPagination()| pagination,totalItem| ninguno|Se reciben el objeto pagination y el totalitem en donde se cargar un for dependiente del numero de paginas total para mostrar los numeros y luego se selecciona la pagina actual que viene en el objeto pagination|
+|setPage()|page|ninguno|Se obtiene los filtros y la busqueda si es null el valor se omiten para posterioremente realizar una peticion al backend en donde por medio de la pagina seleccionada se obtienen los productos junto con los filtros si el caso corresponde|
+|loadFilter()|ninguno|ninguno|Se cargan los filtro de la pagina y si se encuentra en la pagina principal se muestran el filtro de categoria de lo contrario se omitiria|
+|handleOnChange()|target.value| ninguno|Se obtiene el valor seleccionado al cambiar el filtro y se llama a la funcion setOrdenBy() pasando el target.value|
+|getCategory()|ninguno|ninguno|Se obtiene todas las categorias que se generan desde el backend en la peticion y se llama a la funcion loadMenu() con la respuesta|
+|loadMenu()| data|ninguno|Se obtiene un array con las categorias y se genera un map() para mostrarlas en el menu principal|
+|handleCategory()|name|ninguno| se cargan los productos de la categoria seleccionada por el nombre de la categoria y en la respuesta se llaman a los metodos loadPagination(), loadProducts(), loadFilter()|
+|handleSearch()|ninguno|ninguno| Se obtiene el valor del input search y se llama al metodo getSearh() |
+|closedCar()|ninguno|ninguno| se agregan clases al div para cerrar el carro de compras|
+|openCart()|ninguno|ninguno| se agregan clases al div para abrir el carro de compras|
